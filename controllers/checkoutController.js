@@ -1,5 +1,5 @@
 const dotenv = require("dotenv");
-const { createTransport } = require("nodemailer");
+
 const { flatten } = require("safe-flat");
 dotenv.config();
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
